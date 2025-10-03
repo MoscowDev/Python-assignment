@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class NokiaThree{
+public class NokiaTwo{
 public static void main(String [] args){
 int myCollections = 20;
 while(myCollections != 0){

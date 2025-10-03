@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class NokiaTwo{
+public class NokiaEdit{
 public static void main(String [] args){
 int myCollections = 20;
 while(myCollections != 0){
@@ -84,18 +84,14 @@ case 10->{System.out.println(" Select voice tag");}
 }
 // phone book done and dusted
 
-/*System.out.println(prompt)
-Scanner scanner = new Scanner(System.in);
-int messageCollections = scanner.nextInt();
 
-switch(messageCollections){  */
 
-case 2-> {
+case 2-> 
         {System.out.print("Enter Message");
-	String message = """
 	
 	int optionSelect = 20;
 	while(optionSelect != 0){
+	String message = """	
 
 	1-> Write messages
 	2-> Inbox
@@ -113,7 +109,7 @@ case 2-> {
 
 	System.out.print(message);
 	int messageSelect = scanner.nextInt();
-	switch(messageSelect){
+	switch(optionSelect){
 		case 1-> {System.out.println("write a message");}
 		case 2-> {System.out.println(" check inbox");}
 		case 3-> {System.out.println("Check outbox");}
