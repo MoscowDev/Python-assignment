@@ -29,74 +29,82 @@ String pizzaMenu = input.nextLine().toLowerCase();
 
 switch(pizzaMenu){
 
-case "sapa"->{System.out.println("you Choose sapa size");
-System.out.print("enter number of people:  ");
+case "sapa"->{System.out.println("Wow! You Choose sapa size");
+System.out.print("enter number of Guest:  ");
 int people = input.nextInt();
 
+int box = people /4;
+int totalSlice = 4 * box;
+int remainder = 0;
+int Amount = box * 2500;
+System.out.println("total amount is:" + Amount);
+if(people % 4 != 0){
+	box = box + 1;
+	}
+remainder = totalSlice - people;
 
-System.out.print("enter number of boxes:  ");
-int boxes = input.nextInt();
-
-System.out.print("enter amount:  ");
-int pricePerBox = input.nextInt();
-
-pricePerBox = 2500;
-int pricePerSlice = pricePerBox /4;
-
-if(pizzaMenu=="sapa" && people == pricePerSlice ){
+System.out.print("Number of boxes to buy " + box + " The total number of guest " + people + " total amount is " + Amount + " Number of leftover slice " + remainder);
 
 
 }
 
-}
 
-
-
-
-case "small money"->{System.out.print(" you Choose small money");
+case "small money"->{System.out.print(" Wow! you Choose small money");
 
 System.out.print("enter number of people:  ");
 int people = input.nextInt();
 
-System.out.print("enter number of boxes:  ");
-int boxes = input.nextInt();
+int box = people /6;
+int totalSlice = 6 * box;
+int remainder = 0;
+int Amount = box * 2900;
+System.out.println("total amount is:" + Amount);
+if(people % 6 != 0){
+	box = box + 1;
+	}
+remainder = totalSlice - people;
 
-System.out.print("enter amount:  ");
-int PricePerBox = input.nextInt();
-PricePerBox = 2900;
-int pricePerSlice = PricePerBox /6;
+System.out.print("Number of boxes to buy " + box + " The total number of guest " + people + " total amount is " + Amount + " Number of leftover slice " + remainder);
 
 }
-case " big boys"->{System.out.print(" you Choose sBig Boys");
+
+
+case " big boys"->{System.out.print(" Wow! You Choose Big Boys");
 
 System.out.print("enter number of people:  ");
 int people = input.nextInt();
 
-System.out.print("enter number of boxes:  ");
-int boxes = input.nextInt();
+int box = people /8;
+int totalSlice = 8 * box;
+int remainder = 0;
+int Amount = box * 4000;
+System.out.println("total amount is:" + Amount);
+if(people % 8 != 0){
+	box = box + 1;
+	}
+remainder = totalSlice - people;
 
-System.out.print("enter amount:  ");
-int PricePerBox = input.nextInt();
-
-PricePerBox = 4000;
-int PricePerSlice = PricePerBox /8;
+System.out.print("Number of boxes to buy " + box + " The total number of guest " + people + " total amount is " + Amount + " Number of leftover slice " + remainder);
 
 
 
 }
-case "odogwu"->{System.out.println(" you Choose sapa Odogwu");
+case "odogwu"->{System.out.println(" Wow! Choose Odogwu");
 
 System.out.print("enter number of people:  ");
+
 int people = input.nextInt();
+int box = people /12;
+int totalSlice = 12 * box;
+int remainder = 0;
+int Amount = box * 5200;
+System.out.println("total amount is:" + Amount);
+if(people % 12 != 0){
+	box = box + 1;
+	}
+remainder = totalSlice - people;
 
-System.out.print("enter number of boxes:  ");
-int boxes = input.nextInt();
-
-System.out.print("enter amount:  ");
-int PricePerBox = input.nextInt();
-
-PricePerBox = 5200;
-int PricePerSlice = PricePerBox /12;
+System.out.print("Number of boxes to buy " + box + " The total number of guest " + people + " total amount is " + Amount + " Number of leftover slice " + remainder);
 
 
 
@@ -108,3 +116,4 @@ int PricePerSlice = PricePerBox /12;
 }
 }
 }
+
