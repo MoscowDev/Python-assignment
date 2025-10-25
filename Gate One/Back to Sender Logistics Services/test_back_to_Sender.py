@@ -1,9 +1,10 @@
 
 import unittest
-from sender_logistics_services_function import *
+
+from main_logistics_Services import *
 
 
-class test_back_to_Sender(unittest.TestCase):
+class test_main_logistics_Services(unittest.TestCase):
 	def test_that_sender_logistics_function_returns_correct_value_less_than_50_percent(self):
 
 		expected = 9800 
@@ -32,4 +33,16 @@ class test_back_to_Sender(unittest.TestCase):
 		expected = 43500 
 		actual = get_drivers_payment_per_day(77)
 		self.assertEqual(actual,expected)
+
+	def test_that_sender_logistics_function_collects_the_correct_type(self):
+
+		anything = "chelsea"
+		self.assertRaises(TypeError, anything)
+
+		excess = 3.000
+		self.assertRaises(TypeError,excess)
+
+	#def test_that_sender_logistics_function_handles_negative_value(self):
+
+		#self.assertRaises(ValueError,get_drivers_payment_per_day, -1)
 
